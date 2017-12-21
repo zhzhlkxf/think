@@ -17,9 +17,9 @@ return [
     // 默认时区
     'default_timezone'       => 'PRC',
     // 默认全局过滤方法 用逗号分隔多个
-    'default_filter'         => 'htmlspecialchars',
+    'default_filter'         => '',
     // 默认输出类型
-    'default_return_type'    => 'json',
+    'default_return_type'    => 'html',
     // 默认AJAX 数据返回格式,可选json xml ...
     'default_ajax_return'    => 'json',
     // 默认JSONP格式返回的处理方法
@@ -57,6 +57,10 @@ return [
     'class_suffix'           => false,
     // 表单请求类型伪装变量
     'var_method'             => '_method',
+    // 表单ajax伪装变量
+    'var_ajax'               => '_ajax',
+    // 表单pjax伪装变量
+    'var_pjax'               => '_pjax',
 
     // +----------------------------------------------------------------------
     // | 模块设置
