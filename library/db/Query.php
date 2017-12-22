@@ -283,7 +283,7 @@ class Query
             if (isset($this->options['field'])) {
                 unset($this->options['field']);
             }
-            $pdo = $this->field($field)->limit(1)->getPdo();
+            $pdo = $this->field($field)->getPdo(); //$pdo = $this->field($field)->limit(1)->getPdo(); //取消limit可以加快count统计
             if (is_string($pdo)) {
                 // 返回SQL语句
                 return $pdo;
